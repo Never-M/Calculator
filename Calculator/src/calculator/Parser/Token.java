@@ -19,4 +19,17 @@ public class Token {
         
         public float value;
         public Type  type;
+        public boolean hasvalue;
+        
+        public Token(Type type){
+                this.type = type;
+                this.hasvalue = false;
+        }
+        
+        public Token(float value,
+                     Type type){
+                this.value = value;
+                this.type = type;
+                this.hasvalue = true;
+        }
 }

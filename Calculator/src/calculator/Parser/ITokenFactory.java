@@ -5,12 +5,12 @@
  */
 package calculator.Parser;
 
-import java.util.stream.Stream;
+import java.io.InputStream;
 
 /**
  *
  * @author zjz20
  */
 public interface ITokenFactory {
-        public Token create(Stream<Character> streamchar);
+        public Token create(InputStream streamchar) throws Exception;
 }
